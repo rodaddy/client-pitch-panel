@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "panel": {
+    "id": "client-pitch-decision-committee",
+    "name": "Client-Pitch Decision Committee",
+    "objective": "Determine whether a client-side decision committee would vote to award this studio's pitch, and identify the specific objections that would be raised in the room the studio is not in.",
+    "decision_signal": "A committee member would vote to award, or would actively advocate for awarding, this scope to this studio.",
+    "artifact_types": [
+      "pitch-deck",
+      "creative-concept",
+      "proposal",
+      "scope-of-work",
+      "capabilities-response"
+    ],
+    "signer": [],
+    "signer_note": "Everyone whose no stops the deal, filled in during setup-committee step 3b. A list, never one name - co-owners and partners routinely both have to say yes. Every name here gets its own seat, marked \"signer\": true in that seat's entry.",
+    "status": "ready",
+    "created_at": "2026-08-12",
+    "review_due": "Set a date to re-check these composites against real pitch outcomes.",
+    "owner_context": "../owner/OWNER-CONTEXT.md",
+    "evidence_index": "EVIDENCE-NOTES.md",
+    "calibration_outcome": "The real award decision, plus the objections actually raised by the real committee.",
+    "calibration_horizon": "Whenever the client responds to the pitch, with a check at the first follow-up call."
+  },
+  "execution": {
+    "preferred_mode": "isolated-parallel",
+    "max_parallel_per_wave": 7
+  },
+  "scoring": {
+    "dimensions": [
+      {
+        "id": "defensibility",
+        "label": "The CMO can defend this spend upward in one slide",
+        "weight": 25
+      },
+      {
+        "id": "commercial-clarity",
+        "label": "Ask, scope, and money are clean enough to sign",
+        "weight": 20
+      },
+      {
+        "id": "distinctiveness",
+        "label": "Work only this studio would have pitched",
+        "weight": 20
+      },
+      {
+        "id": "proof-and-substantiation",
+        "label": "Every claim survives legal, a skeptic, and a screenshot",
+        "weight": 20
+      },
+      {
+        "id": "livability",
+        "label": "The client's own team can run this after the pitch team leaves",
+        "weight": 15
+      }
+    ]
+  },
+  "seats": [
+    {
+      "id": "cmo-defender",
+      "name": "Dana Whitcomb",
+      "kind": "buyer",
+      "fit": "core",
+      "dossier": "dossiers/01-cmo-defender.md",
+      "decision_signal": "Would vote to award and would personally carry the recommendation to the CEO.",
+      "active": true
+    },
+    {
+      "id": "brand-manager",
+      "name": "Priya Raghunathan",
+      "kind": "user",
+      "fit": "core",
+      "dossier": "dossiers/02-brand-manager.md",
+      "decision_signal": "Would endorse the work as consistent with the brand system rather than objecting to it in the debrief.",
+      "active": true
+    },
+    {
+      "id": "procurement-lead",
+      "name": "Marcus Deng",
+      "kind": "buyer",
+      "fit": "core",
+      "dossier": "dossiers/03-procurement-lead.md",
+      "decision_signal": "Would clear the commercial terms for signature without sending the proposal back for restructuring.",
+      "active": true
+    },
+    {
+      "id": "founder-wants-weirder",
+      "name": "Tobias Lindqvist",
+      "kind": "buyer",
+      "fit": "core",
+      "dossier": "dossiers/04-founder-wants-weirder.md",
+      "decision_signal": "Would push the committee toward this studio because the work is braver than the alternatives.",
+      "active": true
+    },
+    {
+      "id": "legal-reviewer",
+      "name": "Alicia Brandt",
+      "kind": "specialist",
+      "fit": "core",
+      "dossier": "dossiers/05-legal-reviewer.md",
+      "decision_signal": "Applies a substantiation gate: PASS if no claim in the pitch requires proof the client cannot produce, FLAG otherwise.",
+      "active": true
+    },
+    {
+      "id": "agency-fatigued-vp",
+      "name": "Rhonda Feliciano",
+      "kind": "buyer",
+      "fit": "core",
+      "dossier": "dossiers/06-agency-fatigued-vp.md",
+      "decision_signal": "Would vote to award despite having been burned before, because this pitch names how it will be different.",
+      "active": true
+    },
+    {
+      "id": "performance-lead",
+      "name": "Kevin Oyelaran",
+      "kind": "user",
+      "fit": "core",
+      "dossier": "dossiers/07-performance-lead.md",
+      "decision_signal": "Would support the award because the work has a credible path to the numbers he is measured on.",
+      "active": true
+    },
+    {
+      "id": "internal-champion",
+      "name": "Sofia Marchetti",
+      "kind": "user",
+      "fit": "core",
+      "dossier": "dossiers/08-internal-champion.md",
+      "decision_signal": "Would volunteer to own this day to day, which is what makes an award survive the first quarter.",
+      "active": true
+    },
+    {
+      "id": "finance-partner",
+      "name": "Gerald Nyquist",
+      "kind": "buyer",
+      "fit": "adjacent",
+      "dossier": "dossiers/09-finance-partner.md",
+      "decision_signal": "Would release the budget line for this rather than holding it against a competing request.",
+      "active": true
+    },
+    {
+      "id": "comms-pr-lead",
+      "name": "Nadia Osei",
+      "kind": "influencer",
+      "fit": "adjacent",
+      "dossier": "dossiers/10-comms-pr-lead.md",
+      "decision_signal": "Would tell the committee this is safe to put in market rather than flagging external risk.",
+      "active": true
+    },
+    {
+      "id": "incumbent-advocate",
+      "name": "Doug Prentiss",
+      "kind": "influencer",
+      "fit": "adjacent",
+      "dossier": "dossiers/11-incumbent-advocate.md",
+      "decision_signal": "Would stop defending the incumbent agency in this specific scope.",
+      "active": true
+    },
+    {
+      "id": "budget-was-never-real",
+      "name": "Hollis Beaumont",
+      "kind": "buyer",
+      "fit": "wrong-fit",
+      "dossier": "dossiers/12-budget-was-never-real.md",
+      "decision_signal": "Enthusiasm without authority. A YES here is a warning that the pitch is winning a room that cannot buy.",
+      "active": true
+    },
+    {
+      "id": "builds-it-in-house",
+      "name": "Ellery Kwan",
+      "kind": "buyer",
+      "fit": "hard-no",
+      "dossier": "dossiers/13-builds-it-in-house.md",
+      "decision_signal": "Fixed principled non-converter. A YES here means the pitch overpromised or the seat drifted out of character.",
+      "active": true
+    }
+  ]
+}

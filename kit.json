@@ -1,0 +1,9 @@
+{
+  "name": "client-pitch-panel",
+  "version": "0.2.2",
+  "requirements": {
+    "runtimes": {
+      "node": ">=22.6.0"
+    }
+  }
+}

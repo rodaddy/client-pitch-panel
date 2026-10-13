@@ -4,8 +4,7 @@ All notable changes to the Client-Pitch Panel kit are recorded here. This file
 follows Keep a Changelog and Semantic Versioning.
 
 Entries before the public release refer to an internal kit standard
-("KIT-STANDARD", with section numbers) and an internal kit quality review
-("the tribunal"). Neither ships in this repository. The rules from them that
+("KIT-STANDARD", with section numbers) and an internal review. Neither ships in this repository. The rules from them that
 matter to this kit are restated in `README.md` and `ACCEPTANCE.md`.
 
 ## [Unreleased]
@@ -18,7 +17,7 @@ matter to this kit are restated in `README.md` and `ACCEPTANCE.md`.
 
 ## [0.2.2] - 2026-08-17
 
-Cross-family review fixes (Opus + Terra kit-hardening pass).
+Fixes from a second-model review pass.
 
 ### Fixed
 
@@ -50,8 +49,7 @@ Cross-family review fixes (Opus + Terra kit-hardening pass).
   works.
 - `verify-kit.mjs` exit 0 on the shipped package; exit 1 (was 3) on a room whose
   active seat points at a directory.
-- `bash -n` clean on Apple bash 3.2; positioning-law scan passes over all 43
-  kit markdown files.
+- `bash -n` clean on Apple bash 3.2.
 
 ## [0.2.1] - 2026-08-13
 
@@ -243,11 +241,10 @@ run against a real pitch.** No acceptance box in `ACCEPTANCE.md` is checked.
 ### Added
 
 - Created the kit as a **re-skin of the proven panel mechanism**, per an internal
-  kit quality review. Structure copied from the synthetic customer panel kit
+  review. Structure copied from the synthetic customer panel kit
   (published separately as ai-marketing-panel); content is new. No new
-  machinery was invented - the tribunal's finding was that six of eight kits
-  failed because each was a new mechanism built from scratch, while the two that
-  work are a panel and a forge.
+  machinery was invented: that review found that kits built as a new mechanism
+  from scratch failed, while the panel mechanism worked.
 - Added `skills/pitch-panel/` with `SKILL.md`, three workflows
   (`setup-committee.md`, `wash-pitch.md`, `rewrite-and-retest.md`), four
   references (`seat-protocol.md`, `refusal-rules.md`, `committee-standard.md`,
@@ -274,15 +271,15 @@ run against a real pitch.** No acceptance box in `ACCEPTANCE.md` is checked.
   full chain: artifact, gate record, raw reactions, synthesis, arithmetic,
   integrity check, and result.
 
-### Line-wide tribunal rules applied
+### Review rules applied
 
-- **Refusal criterion (tribunal line-wide change 1).** The kit stops and tells
+- **Refusal criterion (review rule 1).** The kit stops and tells
   the studio their input is not good enough when any of four non-negotiables is
   missing: a named client, a stated ask, the actual pitch content, or a budget
   or term shape. The rule lives in `references/refusal-rules.md`, is enforced as
   step 1 of `workflows/wash-pitch.md`, and is a checked criterion in
   `ACCEPTANCE.md`. "Run it anyway with assumptions" is explicitly banned.
-- **No fixture-first verification (tribunal line-wide change 2).** The kit ships
+- **No fixture-first verification (review rule 2).** The kit ships
   **no demo pitch**, and the installer's verify step runs on the studio's own
   real pitch. `examples/` exists as a worked-example layer per KIT-STANDARD and
   is explicitly offered only AFTER the studio's own run, never instead of it. If

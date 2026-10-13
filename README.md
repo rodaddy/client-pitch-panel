@@ -4,9 +4,9 @@ Put a pitch in front of a simulated client-side buying committee before it goes
 in front of the real one.
 
 **State: written, not field-proven.** Version 0.2.2. The kit has been run by AI
-agents against invented studios and clients, and those runs found and fixed
-nine defects (see `CHANGELOG.md`). No real studio has washed a real pitch
-through it, no box in `ACCEPTANCE.md` is checked, and no human has done a
+agents against invented studios and clients: the 0.1.1 workout pass found and
+fixed nine defects, and later review passes fixed more (see `CHANGELOG.md`).
+No real studio has washed a real pitch through it, no box in `ACCEPTANCE.md` is checked, and no human has done a
 device install check. Treat it as a careful draft, not a tested product.
 
 ## What it is
